@@ -1,0 +1,118 @@
+.banner {
+  background-color: navy;
+  text-align: center;
+  padding: 100px 0;
+  color: white;
+  margin-bottom: 10px;
+}
+
+#mascot {
+  border: 5px solid darkorange;
+  border-radius: 20px;
+  width: 200px;
+  height: auto;
+  margin: 20px;
+}
+
+
+
+.cheer {
+  font-weight: bold;
+  font-size: larger;
+}
+
+span.cheer {
+  color: darkorange;
+  text-shadow: 4px 0.5px navy;
+  font-size: 100px;
+}
+
+.text {
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
+}
+
+.content-wrapper {
+  display: flex;
+  gap: 40px;
+  margin-top: 20px;
+}
+
+.left-section {
+  flex: 1;
+}
+
+.right-wrapper {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.fan-club {
+  margin-bottom: 10px;
+}
+
+.fan-club h3 {
+  font-size: 24px;
+  font-weight: bold;
+  text-shadow: 1px 0.5px darkorange;
+  color: navy;
+  margin: 0;
+}
+
+.right-section {
+  flex: 1;
+  padding: 20px;
+  margin-right: 10px;
+  border: 2px solid darkorange;
+  border-radius: 10px;
+  min-height: 200px;
+  max-height: 400px;
+  overflow-y: auto;
+}
+
+#display-text {
+  font-size: 20px;
+  color: darkorange;
+  font-weight: bold;
+  text-shadow: 0.5px 0.5px rgb(12, 22, 202);
+  margin-top: 10px;
+  list-style-type: none;
+  padding: 0;
+}
+
+#display-text li {
+  padding: 10px;
+  margin: 10px 0;
+  background-color: #f0f0f0;
+  border-radius: 5px;
+  color: darkorange;
+  text-shadow: 1px 0.5px rgb(12, 22, 202);
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  border: 3px solid;
+  animation: borderCycle 2s linear infinite;
+  display: block;
+  width: fit-content;
+}
+
+@keyframes borderCycle {
+  0% {
+    border-color: #0000FF;
+    box-shadow: 0 0 10px #0000FF;
+  }
+  50% {
+    border-color: #FF7F00;
+    box-shadow: 0 0 10px #FF7F00;
+  }
+  100% {
+    border-color: #0000FF;
+    box-shadow: 0 0 10px #0000FF;
+  }
+}
+
+#display-text li:hover {
+  background-color: #d3d3d3;
+  box-shadow: 0 0 15px rgba(255, 127, 0, 0.6);
+}
